@@ -77,16 +77,17 @@ h1 {
 }
 
 .slick-prev:before, .slick-next:before {
-  color: #1f2937 !important;
+  color: #9333ea !important; /* Purple color for arrows */
   font-size: 24px !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .slick-dots li button:before {
-  color: #1f2937 !important;
+  color: #9333ea !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #1f2937 !important;
+  color: #db2777 !important; /* Pink color for active dot */
 }
 
 button {
