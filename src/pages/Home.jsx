@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Import images individually
-import image1 from '../assets/home/pic1.jpeg';
-import image2 from '../assets/home/pic2.jpeg';
-import image3 from '../assets/home/pic3.jpeg';
+import image1 from '../assets/home/image1.jpg';
+import image2 from '../assets/home/image2.jpg';
+import image3 from '../assets/home/image3.jpg';
 // Add more imports for each image you have
 
 const Home = () => {
@@ -28,15 +28,15 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center p-4">
-      <div className="max-w-2xl mx-auto p-8 text-center bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+    <div className="min-h-screen bg-gradient-to-b from-sky-50 to-blue-50 flex items-center justify-center p-4">
+      <div className="max-w-2xl mx-auto p-8 text-center bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg">
+        <h1 className="text-4xl font-bold text-sky-900 mb-4">
           Welcome to Lifestyle Tracker
         </h1>
         <p className="text-gray-700 text-lg mb-8">Track your lifestyle habits to reduce myopia risk.</p>
         
         {/* Carousel Container */}
-        <div className="mb-8 rounded-xl overflow-hidden shadow-xl">
+        <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index} className="px-2">
@@ -53,7 +53,7 @@ const Home = () => {
         <div>
           <Link 
             to="/form" 
-            className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg shadow-lg hover:from-purple-700 hover:to-pink-700 hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1"
+            className="inline-block bg-sky-600 text-white px-8 py-3 rounded-lg shadow-md hover:bg-white hover:text-sky-600 hover:shadow-lg transition duration-300 ease-in-out border-2 border-sky-600"
           >
             Go to Lifestyle Form
           </Link>
